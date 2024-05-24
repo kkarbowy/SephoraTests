@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added findWrittenPhrase method and driver setup">
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added phrase parameter in findWrittenPhrase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,24 +28,24 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2gsjF6i0l0nU9XW7gCByWjREymo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.SearchBarSephora.executor": "Run",
-    "git-widget-placeholder": "searchBarTest",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.SearchBarSephora.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;searchBarTest&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\48785\IdeaProjects\SephoraTest\src\main\resources" />
@@ -83,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716496302803</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added phrase parameter in findWrittenPhrase">
+      <option name="closed" value="true" />
+      <created>1716583888333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716583888333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +110,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added TestNG and selenium dependencies to the project." />
     <MESSAGE value="Added findWrittenPhrase method and driver setup," />
-    <option name="LAST_COMMIT_MESSAGE" value="Added findWrittenPhrase method and driver setup," />
+    <MESSAGE value="Added phrase parameter in findWrittenPhrase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added phrase parameter in findWrittenPhrase" />
   </component>
 </project>
