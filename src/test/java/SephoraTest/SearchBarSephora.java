@@ -25,17 +25,17 @@ public class SearchBarSephora {
     @Test
     public void checkIfFoundPharasesAreProperly() { //to będę sprawdzać
         //włączenie przeglądarki, znalezienie wyszukiwarki, wpisanie frazy i enter
-        findWrittenPhrase();
+        findWrittenPhrase("rituals");
 
     }
 
-    private void findWrittenPhrase() {
+    private void findWrittenPhrase(String phrase) {
         //wejdź na serphorę
         driver.get("https://www.sephora.pl");
         //znajdź gdzie jest wyszukiwarka
         WebElement searchBar = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[2]/div[2]/div/div[2]/div/div/input"));
         //wpisz rituals
-        searchBar.sendKeys("rituals");
+        searchBar.sendKeys(phrase);
         //zatwierdź
         searchBar.sendKeys(Keys.RETURN);
     }

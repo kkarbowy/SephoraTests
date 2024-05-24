@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added TestNG and selenium dependencies to the project.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" afterDir="false" />
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added findWrittenPhrase method and driver setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716493690004</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added findWrittenPhrase method and driver setup,">
+      <option name="closed" value="true" />
+      <created>1716496302803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716496302803</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added TestNG and selenium dependencies to the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TestNG and selenium dependencies to the project." />
+    <MESSAGE value="Added findWrittenPhrase method and driver setup," />
+    <option name="LAST_COMMIT_MESSAGE" value="Added findWrittenPhrase method and driver setup," />
   </component>
 </project>
