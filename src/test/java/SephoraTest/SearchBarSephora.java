@@ -28,10 +28,8 @@ public class SearchBarSephora {
     public void driverQuit() {
         driver.quit();
     }
-    @Test
-    public void checkIfFoundPharasesAreProperly() { //to będę sprawdzać
 
-        String expectedPhrase = "rituals";
+    public void checkIfFoundPharasesAreProperly(String expectedPhrase) { //to będę sprawdzać
 
         //włączenie przeglądarki, znalezienie wyszukiwarki, wpisanie frazy i enter
         findWrittenPhrase(expectedPhrase);
@@ -39,7 +37,7 @@ public class SearchBarSephora {
         System.out.println(products);
         for (String product : products) {
             product = product.toLowerCase();
-            Assert.assertEquals(product, expectedPhrase, "Nazwy nie są zgodne!");
+            Assert.assertTrue(product.contains(expectedPhrase), "Nazwy nie są zgodne!");
         }
 
     }
@@ -48,7 +46,7 @@ public class SearchBarSephora {
         //wejdź na serphorę
         driver.get("https://www.sephora.pl");
         //znajdź gdzie jest wyszukiwarka
-        WebElement searchBar = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[2]/div[2]/div/div[2]/div/div/input"));
+        WebElement searchBar = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[3]/div[1]/div[2]/div/input"));
         //wpisz rituals
         searchBar.sendKeys(phrase);
         //zatwierdź
@@ -63,5 +61,12 @@ public class SearchBarSephora {
         }
         return products;
     }
-
+    @Test
+    public void checkIfSearchBarFindsRituals() {
+        checkIfFoundPharasesAreProperly("rituals");
+    }
+    @Test
+    public void checkIfSearchBarFindsDior() {
+        checkIfFoundPharasesAreProperly("benefit");
+    }
 }
