@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added new test and changed assertion type. &#10;Also separeted tests from methods.">
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added new tests.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" afterDir="false" />
     </list>
@@ -40,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml.executor": "Run",
     "TestNG.SearchBarSephora.executor": "Run",
     "git-widget-placeholder": "searchBarTest",
     "kotlin-language-version-configured": "true",
@@ -50,6 +52,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\48785\IdeaProjects\SephoraTest\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SephoraTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716719223921</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added new tests.">
+      <option name="closed" value="true" />
+      <created>1716725000706</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716725000706</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +168,7 @@
     <MESSAGE value="Added phrase parameter in findWrittenPhrase" />
     <MESSAGE value="Added getProductsList method and use it in my test" />
     <MESSAGE value="Added new test and changed assertion type. &#10;Also separeted tests from methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new test and changed assertion type. &#10;Also separeted tests from methods." />
+    <MESSAGE value="Added new tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new tests." />
   </component>
 </project>

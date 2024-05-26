@@ -46,7 +46,7 @@ public class SearchBarSephora {
         //wejdź na serphorę
         driver.get("https://www.sephora.pl");
         //znajdź gdzie jest wyszukiwarka
-        WebElement searchBar = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/header/div[3]/div[1]/div[2]/div/input"));
+        WebElement searchBar = driver.findElement(By.className("fake-search-input"));
         //wpisz rituals
         searchBar.sendKeys(phrase);
         //zatwierdź
