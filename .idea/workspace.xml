@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added getProductsList method and use it in my test">
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added new test and changed assertion type. &#10;Also separeted tests from methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/SearchBarSephora.java" afterDir="false" />
     </list>
@@ -37,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.SearchBarSephora.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;searchBarTest&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.SearchBarSephora.executor": "Run",
+    "git-widget-placeholder": "searchBarTest",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\48785\IdeaProjects\SephoraTest\src\main\resources" />
@@ -100,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716586677218</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added new test and changed assertion type. &#10;Also separeted tests from methods.">
+      <option name="closed" value="true" />
+      <created>1716719223921</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716719223921</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +140,7 @@
     <MESSAGE value="Added findWrittenPhrase method and driver setup," />
     <MESSAGE value="Added phrase parameter in findWrittenPhrase" />
     <MESSAGE value="Added getProductsList method and use it in my test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getProductsList method and use it in my test" />
+    <MESSAGE value="Added new test and changed assertion type. &#10;Also separeted tests from methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new test and changed assertion type. &#10;Also separeted tests from methods." />
   </component>
 </project>

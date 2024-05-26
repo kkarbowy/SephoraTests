@@ -65,8 +65,20 @@ public class SearchBarSephora {
     public void checkIfSearchBarFindsRituals() {
         checkIfFoundPharasesAreProperly("rituals");
     }
-    @Test
-    public void checkIfSearchBarFindsDior() {
+    @Test(priority=0)
+    public void checkIfSearchBarFindsBenefit() {
         checkIfFoundPharasesAreProperly("benefit");
+    }
+    @Test(priority=1)
+    public void checkIfSearchBarFindsRareBeauty() {
+        checkIfFoundPharasesAreProperly("rare beauty");
+    }
+    @Test
+    public void checkIfSearchBarFindsCharlotteTilbury() {
+        checkIfFoundPharasesAreProperly("charlotte");
+    }
+    @Test
+    public void checkIfSearchBarFindsHuda() {
+        checkIfFoundPharasesAreProperly("huda");
     }
 }
