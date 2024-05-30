@@ -9,9 +9,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -36,10 +39,22 @@ public class ShoppingCartTest {
     }
 
     private void addProductsToCart() {
-        List<WebElement> productName = driver.findElements(By.xpath("//*[@id=\"search-result-items\"]/li"));
-        productName.get(0).click();
-        WebElement addToCart = driver.findElement(By.id("add-to-cart"));
-        addToCart.click();
+        for(int i = 0; i < 3; i++) {
+            List<WebElement> productName = driver.findElements(By.xpath("//*[@id=\"search-result-items\"]/li"));
+            productName.get(i).click();
+            WebElement addToCart = driver.findElement(By.id("add-to-cart"));
+            addToCart.click();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            if (i == 2) {
+                WebElement shoppingCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dialog-container\"]/div[3]/a[2]")));
+                shoppingCart.click();
+            }// maksymalny czas oczekiwania 10
+             else {
+                WebElement cross = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close")));
+                cross.click();
+                driver.navigate().back(); //powrót do poprzedniej strony
+            }
+        }
     }
 
         @Test
