@@ -39,20 +39,20 @@ public class ShoppingCartTest {
     }
 
     private void addProductsToCart() {
+        //explicit
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //konstruktor
         for(int i = 0; i < 3; i++) {
             List<WebElement> productName = driver.findElements(By.xpath("//*[@id=\"search-result-items\"]/li"));
             productName.get(i).click();
-            WebElement addToCart = driver.findElement(By.id("add-to-cart"));
+            WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart")));
             addToCart.click();
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            if (i == 2) {
-                WebElement shoppingCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dialog-container\"]/div[3]/a[2]")));
-                shoppingCart.click();
-            }// maksymalny czas oczekiwania 10
-             else {
+            if (i < 2) {
                 WebElement cross = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close")));
                 cross.click();
                 driver.navigate().back(); //powrót do poprzedniej strony
+            }  else {
+                WebElement shoppingCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dialog-container\"]/div[3]/a[2]")));
+                shoppingCart.click();
             }
         }
     }
