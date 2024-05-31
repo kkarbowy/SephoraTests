@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Modified addProductToCart method.">
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Modified addProductToCart method v2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SephoraTest/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/ShoppingCartTest.java" afterDir="false" />
     </list>
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717061453988</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modified addProductToCart method v2.">
+      <option name="closed" value="true" />
+      <created>1717178101284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178101284</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +161,7 @@
     <MESSAGE value="Snapshot v1.0" />
     <MESSAGE value="Added basic logic that put a product into the shopping cart." />
     <MESSAGE value="Modified addProductToCart method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified addProductToCart method." />
+    <MESSAGE value="Modified addProductToCart method v2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified addProductToCart method v2." />
   </component>
 </project>

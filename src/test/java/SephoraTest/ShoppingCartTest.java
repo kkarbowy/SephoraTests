@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,6 +28,10 @@ public class ShoppingCartTest {
     public void driverSetup() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
+    }
+    @AfterMethod
+    public void driverQuit() {
+        driver.quit();
     }
 
     private void getOnMakeupPage() {
@@ -56,12 +62,21 @@ public class ShoppingCartTest {
             }
         }
     }
+        public int countProductsInCart() {
+        List<WebElement> productsInCart = driver.findElements(By.className("grid-item"));
+        int numberOfProducts = productsInCart.size();
+        return numberOfProducts;
+        }
 
         @Test
         public void test () {
             getOnMakeupPage();
             addProductsToCart();
-            System.out.println("X");
+            int actualNumberOfProducts = countProductsInCart();
+            int expectedNumberOfProducts = 3;
+            System.out.println("Number of products in the cart: " + actualNumberOfProducts);
+            System.out.println("Expected number of products for this test: " + expectedNumberOfProducts);
+            Assert.assertEquals(actualNumberOfProducts, expectedNumberOfProducts);
         }
     }
 
