@@ -23,6 +23,7 @@ import java.util.Random;
 
 public class ShoppingCartTest {
     private WebDriver driver;
+    private WebDriverWait wait;
     private Random rand = new Random();
     private static final String pageUrl = "https://www.sephora.pl";
     private static final String chromedriverPath = "src/main/resources/chromedriver.exe";
@@ -56,7 +57,7 @@ public class ShoppingCartTest {
     }
 
     private void addProductsToCart() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         for(int i = 0; i < 3; i++) {
             List<WebElement> productName = driver.findElements(By.xpath(productNameList));
             int randomIndex = rand.nextInt(productName.size());
