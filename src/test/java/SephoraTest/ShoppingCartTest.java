@@ -17,14 +17,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ShoppingCartTest {
     private WebDriver driver;
     private WebDriverWait wait;
-    private Random rand = new Random();
     private static final String pageUrl = "https://www.sephora.pl";
     private static final String chromedriverPath = "src/main/resources/chromedriver.exe";
     private static final String cookiesPath = "//*[@id=\"footer_tc_privacy_button_3\"]";
@@ -60,7 +57,15 @@ public class ShoppingCartTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         for(int i = 0; i < 3; i++) {
             List<WebElement> productName = driver.findElements(By.xpath(productNameList));
-            int randomIndex = rand.nextInt(productName.size());
+            // Lista indeksów produktów
+            List<Integer> indices = new ArrayList<>();
+            for (int j = 0; j < productName.size(); j++) {
+                indices.add(j);
+            }// Tasowanie listy indeksów, aby uzyskać losową kolejność
+            Collections.shuffle(indices);
+
+            int randomIndex = indices.get(i);
+
             productName.get(randomIndex).click();
             WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(addToCartId)));
             addToCart.click();
