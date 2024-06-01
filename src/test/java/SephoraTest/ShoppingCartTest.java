@@ -23,6 +23,7 @@ import java.util.Random;
 
 public class ShoppingCartTest {
     private WebDriver driver;
+    private Random rand = new Random();
     private static final String pageUrl = "https://www.sephora.pl";
     private static final String chromedriverPath = "src/main/resources/chromedriver.exe";
     private static final String cookiesPath = "//*[@id=\"footer_tc_privacy_button_3\"]";
@@ -55,11 +56,11 @@ public class ShoppingCartTest {
     }
 
     private void addProductsToCart() {
-        //explicit
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //konstruktor
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         for(int i = 0; i < 3; i++) {
             List<WebElement> productName = driver.findElements(By.xpath(productNameList));
-            productName.get(i).click();
+            int randomIndex = rand.nextInt(productName.size());
+            productName.get(randomIndex).click();
             WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(addToCartId)));
             addToCart.click();
             if (i < 2) {
