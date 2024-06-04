@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -31,9 +32,10 @@ public class ShoppingCartTest {
     private static final String crossCssSelector = "button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close";
     private static final String shoppingCartPath = "//*[@id=\"dialog-container\"]/div[3]/a[2]";
     private static final String productInCartClass = "grid-item";
+    private static final String hairPath ="//*[@id=\"navigation\"]/ul/li[5]/a";
 
 
-    @BeforeClass
+    @BeforeMethod
     public void driverSetup() {
         System.setProperty("webdriver.chrome.driver", chromedriverPath);
         driver = new ChromeDriver();
@@ -43,14 +45,12 @@ public class ShoppingCartTest {
         driver.quit();
     }
 
-    private void getOnMakeupPage() {
-        //wejdz na sephore
+    private void getOnPage(String pageXpath) {
         driver.get(pageUrl);
-        //kliknij w makijaz
         WebElement cookies = driver.findElement(By.xpath(cookiesPath));
         cookies.click();
-        WebElement makeup = driver.findElement(By.xpath(makeupPath));
-        makeup.click();
+        WebElement page = driver.findElement(By.xpath(pageXpath));
+        page.click();
     }
 
     private void addProductsToCart() {
@@ -85,14 +85,26 @@ public class ShoppingCartTest {
         return numberOfProducts;
         }
 
-        @Test
-        public void checkIfTheCartHasProperNumberOfProducts () {
-            getOnMakeupPage();
-            addProductsToCart();
-            int actualNumberOfProducts = countProductsInCart();
-            int expectedNumberOfProducts = 3;
-            Assert.assertEquals(actualNumberOfProducts, expectedNumberOfProducts, "Number of products in the cart is not equal 3.");
+    private void assertProductsCart() {
+        addProductsToCart();
+        int actualNumberOfProducts = countProductsInCart();
+        int expectedNumberOfProducts = 3;
+        Assert.assertEquals(actualNumberOfProducts, expectedNumberOfProducts, "Number of products in the cart is not equal 3.");
+    }
+
+        @Test(priority = 0)
+        public void checkIfTheCartHasProperNumberOfProductsMakeupCategory() {
+            getOnPage(makeupPath);
+            assertProductsCart();
         }
+
+
+
+    @Test(priority = 1)
+        public void checkIfTheCartHasProperNumberOfProductsHairCategory() {
+        getOnPage(hairPath);
+        assertProductsCart();
+    }
     }
 
 
