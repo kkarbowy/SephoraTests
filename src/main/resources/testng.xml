@@ -6,4 +6,9 @@
             <class name="SephoraTest.SearchBarSephora"/>
         </classes>
     </test>
+    <test name = "ShoppingCartTest">
+        <classes>
+            <class name = "SephoraTest.ShoppingCartTest"/>
+        </classes>
+    </test>
 </suite>

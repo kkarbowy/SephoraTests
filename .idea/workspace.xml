@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Implemented other random index generation method">
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Methods extraction refactor, added new test case.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SephoraTest/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SephoraTest/ShoppingCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.ShoppingCartTest">
+  <component name="RunManager" selected="TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml">
     <configuration name="C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SephoraTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
@@ -88,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ShoppingCartTest" />
         <item itemvalue="TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.ShoppingCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717246594874</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Methods extraction refactor, added new test case.">
+      <option name="closed" value="true" />
+      <created>1717527620016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717527620016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +214,7 @@
     <MESSAGE value="Added random method to generate random index." />
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Implemented other random index generation method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented other random index generation method" />
+    <MESSAGE value="Methods extraction refactor, added new test case." />
+    <option name="LAST_COMMIT_MESSAGE" value="Methods extraction refactor, added new test case." />
   </component>
 </project>
