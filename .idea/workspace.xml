@@ -4,38 +4,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="04dfc523-1744-484c-a9ee-c1a1738ab50c" name="Changes" comment="Added test in XML config file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="searchBarTest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kkarbowy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kkarbowy/SephoraTests.git&quot;,
+    &quot;accountId&quot;: &quot;565109ee-0337-43c7-8940-a279cefdf6ff&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2gsjF6i0l0nU9XW7gCByWjREymo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "projectConfiguration",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ShoppingCartTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ShoppingCartTest&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml">
+    <configuration name="C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SephoraTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SephoraTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SephoraTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SephoraTest" />
+      <option name="MAIN_CLASS_NAME" value="SephoraTest.ShoppingCartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/48785/IdeaProjects/SephoraTest/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.ShoppingCartTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +109,95 @@
       <option name="project" value="LOCAL" />
       <updated>1716493336194</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Snapshot v1.0">
+      <option name="closed" value="true" />
+      <created>1716749281992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716749281992</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added basic logic that put a product into the shopping cart.">
+      <option name="closed" value="true" />
+      <created>1717057457566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717057457566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modified addProductToCart method.">
+      <option name="closed" value="true" />
+      <created>1717061453988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717061453988</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modified addProductToCart method v2.">
+      <option name="closed" value="true" />
+      <created>1717178101284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178101284</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added method to count products and added assertion in test.">
+      <option name="closed" value="true" />
+      <created>1717184505085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184505085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Code refactor">
+      <option name="closed" value="true" />
+      <created>1717188839141</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717188839141</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added random method to generate random index.">
+      <option name="closed" value="true" />
+      <created>1717244656416</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717244656416</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Code refactor">
+      <option name="closed" value="true" />
+      <created>1717244997697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717244997697</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented other random index generation method">
+      <option name="closed" value="true" />
+      <created>1717246594874</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717246594874</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Methods extraction refactor, added new test case.">
+      <option name="closed" value="true" />
+      <created>1717527620016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717527620016</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added test in XML config file.">
+      <option name="closed" value="true" />
+      <created>1717527977742</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717527977742</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,6 +213,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Snapshot v1.0" />
+    <MESSAGE value="Added basic logic that put a product into the shopping cart." />
+    <MESSAGE value="Modified addProductToCart method." />
+    <MESSAGE value="Modified addProductToCart method v2." />
+    <MESSAGE value="Added method to count products and added assertion in test." />
+    <MESSAGE value="Added random method to generate random index." />
+    <MESSAGE value="Code refactor" />
+    <MESSAGE value="Implemented other random index generation method" />
+    <MESSAGE value="Methods extraction refactor, added new test case." />
+    <MESSAGE value="Added test in XML config file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test in XML config file." />
   </component>
 </project>
